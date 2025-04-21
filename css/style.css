@@ -24,7 +24,7 @@ html {
 	--background-light: #f9f9f9d2;
 	--background-dark: #333;
 	--card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	--title-font-size: clamp(1.2rem, 2vw, 2rem);
+	--title-font-size: clamp(1.5rem, 2vw, 2rem);
 	--subtitle-font-size: clamp(1.3rem, 1.5vw, 1.2rem);
 	--paragraph-font-size: clamp(0.9rem, 1.9vw, 1rem);
 	--paragraph-line-height: 1.6;
@@ -53,13 +53,13 @@ header {
 header nav {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 
 }
 
 header nav div img {
-	width: 50px;
+	width: 5rem;
 	height: auto;
 }
 
@@ -95,7 +95,7 @@ header nav ul li a:hover {
 	background-size: 200% 200%;
 	animation: extravagantBackground 10s ease infinite;
 	-webkit-animation: extravagantBackground 10s ease infinite; /* Added for compatibility */
-	padding: 50px 20px;
+	padding: 20px 20px;
 	position: relative; /* Added for positioning moving objects */
 	overflow: hidden; /* Ensures moving objects don't overflow the section */
 }
@@ -127,7 +127,7 @@ header nav ul li a:hover {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	background-color: #ffdb70c7;
+	background-color: #ffe38f70;
 	border-radius: 50%;
 	filter: blur(20px);
 	animation: moveCircles 15s linear infinite, scaleCircles 8s ease-in-out infinite;
@@ -135,32 +135,32 @@ header nav ul li a:hover {
 }
 
 .presentationsection .moving-circle:nth-child(1) {
-	top: 10%;
+	top: 5%;
 	left: 20%;
 	animation-duration: 2s, 3s;
 }
 
 .presentationsection .moving-circle:nth-child(2) {
-	top: 20%;
-	left: 70%;
-	animation-duration: 1s, 8s;
+	top: 8%;
+	left: 80%;
+	animation-duration: 1s, 6s;
 }
 
 .presentationsection .moving-circle:nth-child(3) {
 	top: 35%;
-	left: 60%;
+	left: 10%;
 	animation-duration: 2s, 2s;
 }
 
 .presentationsection .moving-circle:nth-child(4) {
 	top: 26%;
-	left: 80%;
+	left: 85%;
 	animation-duration: 2s, 5s;
 }
 
 .presentationsection .moving-circle:nth-child(5) {
 	top: 13%;
-	left: 8%;
+	left: 2%;
 	animation-duration: 8s, 3s;
 }
 
@@ -185,14 +185,43 @@ header nav ul li a:hover {
 	}
 }
 
+.hometext {
+	position: relative;
+	display: flex;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
 
+.hometext img {
+	width: clamp(20rem, 12vw, 7rem);
+	height: auto;
+	mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+	-webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+	position: relative;
+	z-index: 1;
+}
+
+.hometext::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	background: radial-gradient(circle, #ffdb709a, transparent 80%);
+	filter: blur(20px);
+	z-index: -1;
+}
 
 main .home {
 	text-align: center;
 	padding: 50px 20px;
 	background-color: transparent;
 	color: var(--secondary-color);
-	max-width: 30rem;
 	margin: auto;
 }
 
@@ -204,6 +233,7 @@ main .home h2 {
 main .home p {
 	font-size: var(--paragraph-font-size);
 	line-height: 1.6;
+	max-width: 40rem;
 }
 
 /* Skills Section */
@@ -250,7 +280,7 @@ main .skills div > div i {
 }
 
 main .skills div > div h3 {
-	font-size: var(--title-font-size);
+	font-size: var(--subtitle-font-size);
 	
 }
 
