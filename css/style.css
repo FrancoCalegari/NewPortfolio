@@ -432,3 +432,63 @@ footer div a .icon {
 	width: 24px;
 	height: 24px;
 }
+
+
+/* Proyectos Section Styling */
+
+.proyectsALL {
+	padding: 50px 20px;
+	background-color: var(--background-light);
+	color: var(--secondary-color);
+}
+
+.proyectsALL h2 {
+	text-align: center;
+	font-size: var(--title-font-size);
+	margin-bottom: 30px;
+}
+
+.proyectsALL .fix-proyectos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.proyectsALL .proyecto-item {
+	position: relative;
+	width: 300px;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	background-color: var(--background-light);
+	box-shadow: var(--card-shadow);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
+}
+
+.proyectsALL .proyecto-item:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.proyectsALL .proyecto-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	transition: opacity 0.3s ease;
+}
+
+.proyectsALL .proyecto-item h3 {
+	font-size: var(--subtitle-font-size);
+	margin: 10px 0;
+	color: var(--secondary-color);
+}
+
+.proyectsALL .proyecto-item a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.proyectsALL .proyecto-item:hover img {
+	opacity: 0.8;
+}
