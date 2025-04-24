@@ -100,6 +100,31 @@ header nav ul li a:hover {
 	overflow: hidden; /* Ensures moving objects don't overflow the section */
 }
 
+.tecnologiasIcons{
+	transition: 500ms ease-in-out;
+	border-radius: var(--border-radius);
+	padding: 1rem;
+}
+
+.tecnologiasIcons:hover{
+	background-color: #ffe38f70;
+	padding: 1.2rem;
+	border-radius: var(--border-radius);
+	transition: 500ms ease-in-out;
+}
+
+.tecnologiasIcons i{
+	font-size: 1.8rem;
+	transition: 500ms ease-in-out;
+}
+
+.tecnologiasIcons i:hover{
+	transform: scale(1.3);
+	transition: 500ms all;
+	padding: 0rem 1rem 0rem 1rem;
+	
+}
+
 @keyframes extravagantBackground {
 	0% {
 		background-position: 100% 50%;
@@ -438,7 +463,7 @@ footer div a .icon {
 
 .proyectsALL {
 	padding: 50px 20px;
-	background-color: #fff);
+	background-color: #fff;
 	color: var(--secondary-color);
 }
 
