@@ -25,7 +25,7 @@ html {
 	--background-dark: #333;
 	--card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	--title-font-size: clamp(1.5rem, 2vw, 2rem);
-	--subtitle-font-size: clamp(1.3rem, 1.5vw, 1.2rem);
+	--subtitle-font-size: clamp(1.2rem, 1.4vw, 1.1rem);
 	--paragraph-font-size: clamp(0.9rem, 1.9vw, 1rem);
 	--paragraph-line-height: 1.6;
 	--Darkmode: white;
@@ -438,7 +438,7 @@ footer div a .icon {
 
 .proyectsALL {
 	padding: 50px 20px;
-	background-color: var(--background-light);
+	background-color: #fff);
 	color: var(--secondary-color);
 }
 
