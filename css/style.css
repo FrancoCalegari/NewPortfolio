@@ -114,7 +114,7 @@ header nav ul li a:hover {
 }
 
 .tecnologiasIcons i{
-	font-size: 1.8rem;
+	font-size: clamp(1.7rem, 2vw, 1.3rem);
 	transition: 500ms ease-in-out;
 }
 
